@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: Lavalink
+    env: docker
+    plan: free
+    region: oregon
+    branch: main
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: LAVALINK_PASSWORD
+        value: "youshallnotpass"
+      - key: LAVALINK_PORT
+        value: "2333"
