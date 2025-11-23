@@ -1,5 +1,5 @@
-# Use OpenJDK 17 (suitable for Lavalink)
-FROM openjdk:17-jdk-slim
+# Use a valid OpenJDK 17 slim image
+FROM eclipse-temurin:17-jdk
 
 # Set working directory
 WORKDIR /app
@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y wget ffmpeg
 # Download Lavalink
 RUN wget https://github.com/freyacodes/Lavalink/releases/download/3.10.10/Lavalink.jar
 
-# Set environment variables (default values; can override in Render)
+# Set environment variables (can override in Render)
 ENV LAVALINK_PASSWORD=youshallnotpass
 ENV LAVALINK_PORT=2333
 
@@ -19,3 +19,4 @@ EXPOSE 2333
 
 # Start Lavalink
 CMD ["java", "-jar", "Lavalink.jar"]
+
