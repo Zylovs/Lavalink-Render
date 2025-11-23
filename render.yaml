@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: Lavalink
+    env: java
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: wget https://github.com/freyacodes/Lavalink/releases/download/3.10.10/Lavalink.jar
+    startCommand: java -jar Lavalink.jar
+    envVars:
+      - key: LAVALINK_PASSWORD
+        fromDatabase: false
+        value: "youshallnotpass"
+      - key: LAVALINK_PORT
+        fromDatabase: false
+        value: "2333"
