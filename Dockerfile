@@ -8,7 +8,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y wget ffmpeg
 
 # Download Lavalink JAR (latest stable release)
-RUN wget https://github.com/lavalink-devs/Lavalink/releases/download/3.10.11/Lavalink.jar
+RUN wget https://github.com/lavalink-devs/Lavalink/releases/download/4.1.1/Lavalink.jar
 
 # Expose Lavalink port
 EXPOSE 2333
