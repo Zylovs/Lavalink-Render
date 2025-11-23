@@ -1,5 +1,5 @@
-# Use OpenJDK 17 slim
-FROM openjdk:17-slim
+# Use OpenJDK 17 (slim variant)
+FROM eclipse-temurin:17-jdk-focal
 
 # Set working directory
 WORKDIR /app
@@ -15,5 +15,3 @@ EXPOSE 2333
 
 # Start Lavalink
 CMD ["java", "-jar", "Lavalink.jar"]
-
-
