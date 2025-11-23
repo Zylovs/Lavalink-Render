@@ -9,8 +9,6 @@ services:
     startCommand: java -jar Lavalink.jar
     envVars:
       - key: LAVALINK_PASSWORD
-        fromDatabase: true
         value: "youshallnotpass"
       - key: LAVALINK_PORT
-        fromDatabase: true
         value: "2333"
