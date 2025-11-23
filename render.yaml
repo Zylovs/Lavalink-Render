@@ -12,3 +12,4 @@ services:
         value: "youshallnotpass"
       - key: LAVALINK_PORT
         value: "2333"
+
