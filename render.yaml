@@ -3,7 +3,7 @@ services:
     name: Lavalink
     env: docker
     plan: free
-    region: oregon
+    region: ohio
     branch: main
     dockerfilePath: Dockerfile
     envVars:
